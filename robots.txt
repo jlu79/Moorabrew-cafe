@@ -18,4 +18,4 @@ Disallow: /terms-and-conditions.html
 Disallow: /privacy-policy.html
 
 # Sitemap location
-Sitemap: https://www.yoursite.com/sitemap.xml
+Sitemap: https://jlu79.github.io/Moorabrew-cafe/
