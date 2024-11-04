@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO Metadata Tags -->
+  <meta
+  name="keywords"
+  content="Moorabbin, Cafe menu, coffee, pastries, bread, brunch menu, lunch menu, specialty coffee, sandwiches, salads, local cafe, Moorabbin cafe, dessert, homemade treats">
+  <meta
+  name="description"
+  content="Explore our Cafe Menu in Moorabbin. We offer a variety of specialty coffees, handmade pastries, fresh sandwiches, salads, and homemade treats. Perfect for brunch or lunch in a cozy atmosphere.">
+
+    <title>Moorabrew Café</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- An external CSS stylesheet -->
+    <link rel="stylesheet" href="./menu.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./Moorabrew_Café-removebg-preview.png" alt="Logo">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Special Section -->
+    <section class="menu-section">
+      <h2 class="section-title">Today's Special</h2>
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <div class="featured-item">
+            <img
+              src="./IMG/freepik-export-20241103153104MDcu.jpeg"
+              alt="Matcha Latte"
+            >
+            <h3>Matcha Latte</h3>
+            <p>A perfect blend of earthy matcha and creamy milk.</p>
+            <p><strong>$5.50</strong></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-12">
+          <div class="featured-item">
+            <img
+              src="https://images.unsplash.com/photo-1643970523389-d275e18c1988?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Chocolate Croissant"
+            >
+            <h3>Chocolate Croissant</h3>
+            <p>Deliciously flaky with a rich chocolate filling.</p>
+            <p><strong>$4.00</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section class="menu-section">
+      <h2 class="section-title">Drinks</h2>
+      <ul class="menu-list">
+        <li>Cappuccino <span>$4.00</span></li>
+        <li>Latte <span>$4.50</span></li>
+        <li>Flat White <span>$4.00</span></li>
+        <li>Mocha <span>$5.00</span></li>
+        <li>Espresso <span>$3.00</span></li>
+        <li>Hot Chocolate <span>$4.50</span></li>
+        <li>Chai Latte <span>$4.50</span></li>
+      </ul>
+    </section>
+
+    <!-- Pastries Section -->
+    <section class="menu-section">
+      <h2 class="section-title">Pastries</h2>
+      <ul class="menu-list">
+        <li>Croissant <span>$3.00</span></li>
+        <li>Muffin (Blueberry, Chocolate) <span>$3.50</span></li>
+        <li>Banana Bread <span>$4.00</span></li>
+        <li>Almond Croissant <span>$4.50</span></li>
+        <li>Scones with Jam & Cream <span>$3.50</span></li>
+      </ul>
+    </section>
+
+    <!-- Download Menu Section -->
+    <section class="menu-section text-center">
+      <h2 class="section-title">Download Full Menu</h2>
+      <p>For more options, download our full menu:</p>
+      <a href="./Moorabrew_Cafe_Menu.pdf" download class="btn btn-primary"
+        >Download Menu</a
+      >
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© 2024 Moorabrew Café</p>
+      <p>
+        <a href="#" class="text-white me-3">Facebook</a>
+        <a href="#" class="text-white me-3">Instagram</a>
+        <a href="#" class="text-white">Twitter</a>
+      </p>
+    </div>
+
+    <!-- Back-to-top Button -->
+    <button onclick="scrollToTop()" id="backToTopBtn" class="btn btn-secondary">
+      Back to Top
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Show the back-to-top button when the user scrolls down 20px from the top
+      window.onscroll = function () {
+        toggleBackToTopBtn();
+      };
+
+      function toggleBackToTopBtn() {
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          backToTopBtn.style.display = "block";
+        } else {
+          backToTopBtn.style.display = "none";
+        }
+      }
+
+      // Scroll back to the top of the page
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>

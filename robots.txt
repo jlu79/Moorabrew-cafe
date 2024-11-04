@@ -1,0 +1,21 @@
+User-agent: *
+# Pages allowed to be crawled
+Allow: /about
+Allow: /contact
+Allow: /menu
+Allow: /blog
+Allow: /events
+
+# Pages blocked from crawling
+Disallow: /admin
+Disallow: /login
+Disallow: /private
+Disallow: /cart
+Disallow: /checkout
+
+# Block specific files
+Disallow: /terms-and-conditions.html
+Disallow: /privacy-policy.html
+
+# Sitemap location
+Sitemap: https://www.yoursite.com/sitemap.xml

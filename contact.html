@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Contact Page SEO Metadata Tags -->
+    <meta
+    name="keywords"
+    content="Moorabbin cafe contact, cafe location, get in touch, cafe phone, cafe address, cafe hours, cafe near me">
+    <meta
+    name="description"
+    content="Contact us for information about our Moorabbin cafe, location, hours, and reservations. We look forward to hearing from you!">
+
+    <title>Moorabrew Café</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+      /* css style */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Navbar styles */
+      .navbar-brand img {
+        width: 130px;
+        height: auto;
+      }
+      .navbar {
+        max-width: 100vw;
+        overflow-x: hidden;
+      }
+      .navbar-nav .nav-link {
+        color: #ffffff;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+      section {
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+      h2 {
+        color: #333;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .contact-info {
+        display: flex;
+        gap: 20px;
+      }
+      .contact-info .info-text {
+        flex: 1;
+      }
+      .contact-info iframe {
+        width: 100%;
+        height: 300px;
+        max-width: 400px;
+        border: 0;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./Moorabrew_Café-removebg-preview.png" alt="Logo">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- form -->
+    <section>
+      <h2>Contact Form</h2>
+      <form
+        action="mailto:contact@localcafe.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name">Your Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        >
+
+        <label for="email">Your Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        >
+
+        <label for="message">Your Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Type your message here"
+          required
+        ></textarea>
+
+        <input type="submit" value="Send">
+      </form>
+    </section>
+
+    <!-- location contact ways -->
+    <section>
+      <h2>Our Location</h2>
+      <div class="contact-info">
+        <div class="info-text">
+          <p>123 Coffee St, Moorabbin, VIC 3189</p>
+          <p>Hours: Mon-Fri: 7 AM - 5 PM, Sat-Sun: 8 AM - 4 PM</p>
+          <p>Phone: <a href="tel:+61312345678">+61 3 1234 5678</a></p>
+          <p>
+            Email:
+            <a href="mailto:contact@localcafe.com">contact@Moorabrewcafe.com</a>
+          </p>
+        </div>
+        <iframe
+          src="https://maps.google.com/maps?q=123%20Coffee%20St,%20Moorabbin&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© 2024 Moorabrew Café</p>
+      <p>
+        <a href="#" class="text-white me-3">Facebook</a>
+        <a href="#" class="text-white me-3">Instagram</a>
+        <a href="#" class="text-white">Twitter</a>
+      </p>
+    </div>
+  </body>
+</html>
