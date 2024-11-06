@@ -21,7 +21,6 @@ body {
   font-weight: bold;
   text-align: center;
   margin-top: 2rem;
-  margin-bottom: 2rem;
   color: #333;
 }
 .menu-section {
@@ -35,6 +34,10 @@ body {
   padding: 0.5rem 0;
   display: flex;
   justify-content: space-between; /* Right-align prices */
+}
+.menu-descriptions{
+  text-align: center;
+font-size: 1.5rem;
 }
 .featured-item {
   /* padding: 20px; */
